@@ -13,9 +13,9 @@ build:
 	/bin/cp debian/debian.rb bundler.d/
 	/usr/bin/bundle package
 	/bin/rm -rf node_modules
-	/usr/bin/npm install --no-optional --unsafe-perm
+	NODE_ENV=production /usr/bin/npm install --no-optional --unsafe-perm
 	/usr/bin/bundle exec rake locale:pack assets:precompile RAILS_ENV=production
-	/usr/bin/bundle exec rake webpack:compile
+	NODE_ENV=production /usr/bin/bundle exec rake webpack:compile
 	/usr/bin/bundle exec rake db:migrate --trace RAILS_ENV=production
 	# we need to allow taxonomies so apipie cache renders documentation with them
 	/bin/sed -i 's/:locations_enabled: false/:locations_enabled: true/' config/settings.yaml
