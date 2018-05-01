@@ -3,11 +3,11 @@ Upstream-Name: ruby-smart-proxy-dhcp-device42
 Source: https://github.com/theforeman/smart_proxy_dhcp_device42
 
 Files: *
-Copyright: 2013-2016 Foreman developers <foreman-dev@googlegroups.com>
+Copyright: 2017-2018 Foreman developers <foreman-dev@googlegroups.com>
 License: GPL-3.0+
 
 Files: debian/*
-Copyright: 2016 Foreman developers <foreman-dev@googlegroups.com>
+Copyright: 2018 Foreman developers <foreman-dev@googlegroups.com>
 License: GPL-3.0+
 
 License: GPL-3.0+

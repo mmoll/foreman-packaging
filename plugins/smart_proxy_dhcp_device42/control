@@ -10,6 +10,6 @@ XS-Ruby-Versions: all
 Package: ruby-smart-proxy-dhcp-device42
 Architecture: all
 XB-Ruby-Versions: ${ruby:Versions}
-Depends: ${shlibs:Depends}, ${misc:Depends}, ruby | ruby-interpreter, foreman-proxy (>= 1.16), httparty (>= 0.15)
+Depends: ${shlibs:Depends}, ${misc:Depends}, ruby | ruby-interpreter, foreman-proxy (>= 1.16.0~rc1), ruby-httparty (>= 0.15), ruby-httparty (<< 1)
 Description: Device42 DHCP provider plugin for Foreman's smart proxy
  Device42 DHCP provider plugin for Foreman's smart proxy
