@@ -27,9 +27,6 @@ build:
 	/bin/mkdir -p .ssh
 	dh $@
 
-%:
-	dh $@ --with=systemd
-
 override_dh_installinit:
 	dh_installinit
 	dh_installinit --name=dynflowd
