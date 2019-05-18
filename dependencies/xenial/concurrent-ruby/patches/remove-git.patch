@@ -1,0 +1,16 @@
+Description: Remove usage of git in gemspec
+Author: Balasankar C <balasankarc@autistici.org>
+Last-Update: 2015-12-30
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
+--- a/concurrent-ruby.gemspec
++++ b/concurrent-ruby.gemspec
+@@ -2,7 +2,6 @@ require File.join(File.dirname(__FILE__ ), 'lib/concurrent/version')
+ require File.join(File.dirname(__FILE__ ), 'lib/concurrent/utility/engine')
+
+ Gem::Specification.new do |s|
+-  git_files = `git ls-files`.split("\n")
+
+   s.name             = 'concurrent-ruby'
+   s.version          = Concurrent::VERSION
+
