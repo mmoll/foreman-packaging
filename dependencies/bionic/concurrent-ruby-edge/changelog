@@ -1,0 +1,5 @@
+ruby-concurrent-edge (0.4.1-1) stable; urgency=low
+
+  * Initial release
+
+ -- Michael Moll <mmoll@mmoll.at>  Sat, 18 May 2019 01:16:44 +0200
